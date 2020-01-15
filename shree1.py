@@ -1,0 +1,21 @@
+from tkinter import *
+root=Tk()
+root.geometry("800x400")
+ent1=Entry(root)
+label1=Label(root,text="Name")
+label1.place(x=10,y=50)
+ent1.place(x=80,y=50)
+label2=Label(root,text="Password")
+label2.place(x=10,y=80)
+ent2=Entry(root,show="*")
+ent2.place(x=80,y=80)
+def disp():
+	print(""+ent1.get()+ent2.get())
+btn1=Button(root,text="Click ME",command=disp)
+btn1.place(x=45,y=120)
+def clr():
+	ent1.delete(0,END)
+	ent2.delete(0,END)
+btn2=Button(root,text="Clear",command=clr)
+btn2.place(x=120,y=120)
+root.mainloop()

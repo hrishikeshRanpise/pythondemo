@@ -1,0 +1,11 @@
+git config --global user.email "hranpise30895@gmail.com"
+git config --global user.name "HrishikeshRanpise"
+
+commands
+git init
+git add filename | -A
+git status
+git commit -m "msg"
+git remote add origin repository
+git push origin master
+git push -u origin master
